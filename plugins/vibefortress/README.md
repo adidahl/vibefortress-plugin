@@ -24,7 +24,7 @@ Then open a project and say **check my app**, or run `/vibefortress:start`.
 
 This repository holds the plugin's instructions for Claude (three skills and one agent), its hooks and its settings. It holds no program code.
 
-The scanner itself is the npm package [`vibefortress`](https://www.npmjs.com/package/vibefortress). The plugin starts it with `npx -y vibefortress@0.1.31 mcp`, always at this one exact version, and its hooks use a copy of the same version that is fetched once into the plugin's own data folder (`npm install --ignore-scripts`, no other packages). The package has no dependencies. Each release is signed, and the scanner checks its own files against that signature when it starts.
+The scanner itself is the npm package [`vibefortress`](https://www.npmjs.com/package/vibefortress). The plugin starts it with `npx -y vibefortress@0.1.32 mcp`, always at this one exact version, and its hooks use a copy of the same version that is fetched once into the plugin's own data folder (`npm install --ignore-scripts`, no other packages). The package has no dependencies. Each release is signed, and the scanner checks its own files against that signature when it starts.
 
 On first use the scanner downloads three open-source tools (gitleaks, OSV-Scanner, Opengrep) and checks each against a fixed SHA-256 value before running it.
 

@@ -4,7 +4,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "vibefortress@0.1.31",
+        "vibefortress@0.1.32",
         "mcp"
       ],
       "env": {
