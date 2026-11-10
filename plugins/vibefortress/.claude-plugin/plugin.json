@@ -1,0 +1,17 @@
+{
+  "name": "vibefortress",
+  "version": "0.1.31",
+  "description": "Security that keeps up with vibe coding: scans your project on your own machine, explains findings in plain language, and fixes them on a branch. Never blocks a commit or push.",
+  "author": {
+    "name": "Vibe Fortress"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "security",
+    "secrets",
+    "dependencies",
+    "vibe-coding"
+  ],
+  "homepage": "https://vibefortress.com",
+  "repository": "https://github.com/adidahl/vibefortress-plugin"
+}

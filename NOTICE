@@ -1,0 +1,12 @@
+Vibe Fortress
+
+The npm package "vibefortress" bundles open-source JavaScript packages. Their names, versions and licence texts are in
+dist/THIRD_PARTY_LICENSES.txt inside the package.
+
+Local scanners are downloaded on first use, never bundled, and verified against the SHA-256 values pinned in dist/scanners.lock.json:
+- gitleaks (MIT) https://github.com/gitleaks/gitleaks
+- OSV-Scanner (Apache-2.0) https://github.com/google/osv-scanner, vulnerability data from https://osv.dev
+- Opengrep (LGPL-2.1) https://github.com/opengrep/opengrep, run with Vibe Fortress's own rules.
+
+The hosted Vibe Fortress service is built on Google Mantis (https://github.com/google/mantis, Apache-2.0). No Mantis code is part of
+this repository or of the npm package.

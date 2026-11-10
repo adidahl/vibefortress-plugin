@@ -1,0 +1,16 @@
+{
+  "name": "vibefortress",
+  "owner": {
+    "name": "Vibe Fortress"
+  },
+  "plugins": [
+    {
+      "name": "vibefortress",
+      "source": "./plugins/vibefortress",
+      "description": "Security that keeps up with vibe coding: local scans, plain-language findings, one-click fixes. Never blocks."
+    }
+  ],
+  "metadata": {
+    "description": "Vibe Fortress: security checks for apps built with AI, on your own computer."
+  }
+}

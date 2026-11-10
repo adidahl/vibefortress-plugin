@@ -1,0 +1,15 @@
+Vibe Fortress
+Copyright (c) 2026 Vibe Fortress. All rights reserved.
+
+This software is proprietary. You may install and run it, unmodified, to use
+the Vibe Fortress product on your own computers. You may not copy it for
+others, modify it, sell it, or publish it, in whole or in part, without
+written permission from the copyright holder.
+
+The software is provided "as is", without warranty of any kind, express or
+implied. It gives automated security guidance that can miss problems or be
+wrong. To the extent the law allows, the copyright holder is not liable for
+any damage that follows from its use.
+
+Third-party software is used under its own licences. See NOTICE and, in the
+npm package "vibefortress", dist/THIRD_PARTY_LICENSES.txt.

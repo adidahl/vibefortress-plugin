@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "vibefortress-local": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "vibefortress@0.1.31",
+        "mcp"
+      ],
+      "env": {
+        "VIBEFORT_HOME": "${CLAUDE_PLUGIN_DATA}"
+      }
+    }
+  }
+}
