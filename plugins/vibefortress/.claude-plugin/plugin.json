@@ -1,6 +1,6 @@
 {
   "name": "vibefortress",
-  "version": "0.1.50",
+  "version": "0.1.52",
   "description": "Security that keeps up with vibe coding: scans your project on your own machine, explains findings in plain language, and fixes them on a branch. Never blocks a commit or push.",
   "author": {
     "name": "Vibe Fortress"
@@ -13,5 +13,6 @@
     "vibe-coding"
   ],
   "homepage": "https://vibefortress.com",
+  "privacyPolicyUrl": "https://vibefortress.com/privacy",
   "repository": "https://github.com/adidahl/vibefortress-plugin"
 }

@@ -3,8 +3,8 @@
 # It never waits for a download and never fails: when the package is not on this machine yet it starts
 # the download in the background and ends at once; later hooks use the downloaded copy.
 # usage: sh run.sh <session-start|post-bash|pre-bash|stop>
-VERSION="0.1.50"
-SPEC="vibefortress@0.1.50"
+VERSION="0.1.52"
+SPEC="vibefortress@0.1.52"
 
 if ! command -v node >/dev/null 2>&1 || ! node -e 'process.exit(parseInt(process.versions.node, 10) >= 20 ? 0 : 1)' >/dev/null 2>&1; then
   [ "$1" = "session-start" ] && printf '%s' '{"systemMessage":"Vibe Fortress needs Node 20 or newer to scan. Install it from nodejs.org, then restart Claude Code."}'
