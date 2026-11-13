@@ -1,10 +1,14 @@
 {
   "mcpServers": {
+    "vibefortress": {
+      "type": "http",
+      "url": "https://vibefortress.com/mcp"
+    },
     "vibefortress-local": {
       "command": "npx",
       "args": [
         "-y",
-        "vibefortress@0.1.32",
+        "vibefortress@0.1.50",
         "mcp"
       ],
       "env": {

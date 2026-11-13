@@ -1,6 +1,6 @@
 # Vibe Fortress for Claude Code
 
-Security that keeps up with vibe coding. Vibe Fortress scans your project on your own computer for leaked secrets, vulnerable packages, common code mistakes and risky configuration. It explains each finding in plain language and fixes it on a new branch when you say so. It never blocks a commit or a push, and it needs no account.
+Security that keeps up with vibe coding. Vibe Fortress scans your project on your own computer for leaked secrets, vulnerable packages, common code mistakes and risky configuration. It explains each finding in plain language and fixes it on a new branch when you say so. It never blocks a commit or a push. The quick local check needs no account; the deep scan uses the Vibe Fortress service and asks you to sign in with GitHub the first time.
 
 ## Install
 
@@ -22,9 +22,11 @@ Then open a project and say **check my app**, or run `/vibefortress:start`.
 
 ## What this plugin contains, and what it downloads
 
-This repository holds the plugin's instructions for Claude (three skills and one agent), its hooks and its settings. It holds no program code.
+This repository holds the plugin's instructions for Claude (three skills and two agents: one fixes findings on a branch, one reviews the findings of a deep scan independently), its hooks and its settings. It holds no program code.
 
-The scanner itself is the npm package [`vibefortress`](https://www.npmjs.com/package/vibefortress). The plugin starts it with `npx -y vibefortress@0.1.32 mcp`, always at this one exact version, and its hooks use a copy of the same version that is fetched once into the plugin's own data folder (`npm install --ignore-scripts`, no other packages). The package has no dependencies. Each release is signed, and the scanner checks its own files against that signature when it starts.
+The plugin connects two servers: `vibefortress-local`, the scanner on your computer, and `vibefortress`, the hosted service at `https://vibefortress.com/mcp` that runs the deep scan. Your code stays on your computer: the local scanner sends the service file names, sizes, tool results with secrets masked, and package names and versions; Claude reads the code itself. You can turn either server off in `/mcp`.
+
+The scanner itself is the npm package [`vibefortress`](https://www.npmjs.com/package/vibefortress). The plugin starts it with `npx -y vibefortress@0.1.50 mcp`, always at this one exact version, and its hooks use a copy of the same version that is fetched once into the plugin's own data folder (`npm install --ignore-scripts`, no other packages). The package has no dependencies. Each release is signed, and the scanner checks its own files against that signature when it starts.
 
 On first use the scanner downloads three open-source tools (gitleaks, OSV-Scanner, Opengrep) and checks each against a fixed SHA-256 value before running it.
 
