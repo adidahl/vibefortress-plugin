@@ -8,11 +8,11 @@
       "command": "npx",
       "args": [
         "-y",
-        "vibefortress@0.1.52",
+        "vibefortress@0.1.54",
         "mcp"
       ],
       "env": {
-        "VIBEFORT_HOME": "${CLAUDE_PLUGIN_DATA}"
+        "VIBEFORTRESS_HOME": "${CLAUDE_PLUGIN_DATA}"
       }
     }
   }

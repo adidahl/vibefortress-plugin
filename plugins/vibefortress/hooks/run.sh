@@ -3,16 +3,18 @@
 # It never waits for a download and never fails: when the package is not on this machine yet it starts
 # the download in the background and ends at once; later hooks use the downloaded copy.
 # usage: sh run.sh <session-start|post-bash|pre-bash|stop>
-VERSION="0.1.52"
-SPEC="vibefortress@0.1.52"
+VERSION="0.1.54"
+SPEC="vibefortress@0.1.54"
 
 if ! command -v node >/dev/null 2>&1 || ! node -e 'process.exit(parseInt(process.versions.node, 10) >= 20 ? 0 : 1)' >/dev/null 2>&1; then
   [ "$1" = "session-start" ] && printf '%s' '{"systemMessage":"Vibe Fortress needs Node 20 or newer to scan. Install it from nodejs.org, then restart Claude Code."}'
   exit 0
 fi
 
-DATA="${CLAUDE_PLUGIN_DATA:-$HOME/.vibefort}"
-export VIBEFORT_HOME="$DATA"
+# One-time move of the old data folder (renamed from Vibe Fort): only when no plugin data folder is set and the new one does not exist yet.
+[ -n "$CLAUDE_PLUGIN_DATA" ] || { [ -d "$HOME/.vibefort" ] && [ ! -e "$HOME/.vibefortress" ] && mv "$HOME/.vibefort" "$HOME/.vibefortress" 2>/dev/null; }
+DATA="${CLAUDE_PLUGIN_DATA:-$HOME/.vibefortress}"
+export VIBEFORTRESS_HOME="$DATA"
 PKG="$DATA/pkg/$VERSION"
 HOOK="$PKG/node_modules/vibefortress/dist/hook.js"
 
