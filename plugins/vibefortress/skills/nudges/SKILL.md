@@ -1,9 +1,9 @@
 ---
 name: nudges
-description: Dismiss or switch off Vibe Fortress reminders. Use ONLY when the user says things like "not now", "dismiss that", "stop reminding me", "turn off the security reminders" or asks to turn them back on or see what is quiet.
+description: Dismiss or switch off Vibefortress reminders. Use ONLY when the user says things like "not now", "dismiss that", "stop reminding me", "turn off the security reminders" or asks to turn them back on or see what is quiet.
 ---
 
-# Vibe Fortress reminders
+# Vibefortress reminders
 
 Call the `local_nudges` tool with `path` set to the project folder.
 

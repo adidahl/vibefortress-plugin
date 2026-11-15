@@ -1,7 +1,7 @@
 {
   "name": "vibefortress",
   "owner": {
-    "name": "Vibe Fortress"
+    "name": "Vibefortress"
   },
   "plugins": [
     {
@@ -11,6 +11,6 @@
     }
   ],
   "metadata": {
-    "description": "Vibe Fortress: security checks for apps built with AI, on your own computer."
+    "description": "Vibefortress: security checks for apps built with AI, on your own computer."
   }
 }

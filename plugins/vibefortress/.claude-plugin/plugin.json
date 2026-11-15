@@ -1,9 +1,9 @@
 {
   "name": "vibefortress",
-  "version": "0.1.55",
+  "version": "0.1.61",
   "description": "Security that keeps up with vibe coding: scans your project on your own machine, explains findings in plain language, and fixes them on a branch. Never blocks a commit or push.",
   "author": {
-    "name": "Vibe Fortress"
+    "name": "Vibefortress"
   },
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
