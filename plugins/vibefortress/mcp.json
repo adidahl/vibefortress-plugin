@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "vibefortress": {
+      "type": "streamable-http",
+      "url": "https://www.vibefortress.com/mcp"
+    },
+    "vibefortress-local": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "vibefortress@0.1.67",
+        "mcp"
+      ],
+      "env": {
+        "VIBEFORTRESS_HOME": "${PLUGIN_DATA}"
+      }
+    }
+  }
+}
