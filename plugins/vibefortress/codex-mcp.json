@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "vibefortress": {
+      "type": "streamable-http",
+      "url": "https://www.vibefortress.com/mcp"
+    },
+    "vibefortress-local": {
+      "command": "./mcp/run.sh",
+      "args": [],
+      "cwd": ".",
+      "env": {
+        "VIBEFORTRESS_DATA_FROM": "codex-plugin-root"
+      }
+    }
+  }
+}

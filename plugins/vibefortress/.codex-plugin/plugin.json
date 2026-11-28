@@ -1,0 +1,36 @@
+{
+  "name": "vibefortress",
+  "version": "0.1.74",
+  "description": "Security that keeps up with vibe coding: scans your project on your own machine, explains findings in plain language, and fixes them on a branch. Never blocks a commit or push.",
+  "author": {
+    "name": "Vibefortress"
+  },
+  "homepage": "https://www.vibefortress.com",
+  "repository": "https://github.com/adidahl/vibefortress-plugin",
+  "license": "SEE LICENSE IN LICENSE",
+  "skills": "./skills/",
+  "mcpServers": "./codex-mcp.json",
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Vibefortress",
+    "shortDescription": "Security for your AI apps",
+    "developerName": "Vibefortress",
+    "longDescription": "Check your project on this computer, review findings in plain language and fix them on a branch. Includes local tools, saved hosted results, skills and advisory hooks. Hosted review is paused.",
+    "category": "Security",
+    "websiteURL": "https://www.vibefortress.com",
+    "privacyPolicyURL": "https://www.vibefortress.com/privacy",
+    "termsOfServiceURL": "https://www.vibefortress.com/terms",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png",
+    "defaultPrompt": [
+      "Check my app",
+      "Show my security results"
+    ],
+    "brandColor": "#4338ca"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/start/SKILL.md"
+    }
+  }
+}

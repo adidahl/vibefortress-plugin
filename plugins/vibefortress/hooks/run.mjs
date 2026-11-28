@@ -9,9 +9,9 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const VERSION = "0.1.73";
-const SPEC = "vibefortress@0.1.73";
-const NODE_MISSING = '{"systemMessage":"Vibefortress needs Node 20 or newer to scan. Install it from nodejs.org, then restart Claude Code."}';
+const VERSION = "0.1.74";
+const SPEC = "vibefortress@0.1.74";
+const NODE_MISSING = '{"systemMessage":"Vibefortress needs Node 20 or newer to scan. Install it from nodejs.org, then restart the app."}';
 
 const event = process.argv[2] ?? "";
 const data = process.env.CLAUDE_PLUGIN_DATA || join(homedir(), ".vibefortress");
